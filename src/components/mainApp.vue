@@ -41,15 +41,21 @@ export default {
                     Projects:
                 </h1>
             </div>
-            <div class="card text-start" v-for="project in projects">
-              <!-- <img class="card-img-top" src="holder.js/100px180/" alt="Title">
-              <div class="card-body"> -->
-                <h4 class="card-title">{{project.title}}</h4>
-                <!-- <p class="card-text">Body</p> -->
-              <!-- </div> -->
-            </div>
         </div>
 
+        <div class="row">
+            <div class="col-3 mb-4"  v-for="project in projects">
+                <div class="card">
+                    <img :src="project.image" alt="{{project.title}}">
+                     <div class="card-body">
+                     <h4>{{project.title}}</h4>
+                     <h5>{{project.author}}</h5>
+                     <h6>{{project.project_date}}</h6>
+                     <p class="card-text">{{project.content}}</p>
+              </div>
+            </div>
+            </div>
+        </div>
         
         
     </div>
