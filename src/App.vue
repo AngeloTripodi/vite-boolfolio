@@ -2,17 +2,19 @@
 export default {
   name: 'App',
   components: {
-    mainApp,
+    AppHeader,
   }
 }
-import mainApp from './components/mainApp.vue';
+import AppHeader from './components/AppHeader.vue';
+
 </script>
 
 <template>
-  <div>
+  <header>
+    <AppHeader />
+  </header>
 
-  </div>
-  <mainApp />
+  <router-view></router-view>
 </template>
 
 <style lang="scss">
