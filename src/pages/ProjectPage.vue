@@ -19,6 +19,7 @@ export default {
 
 <template>
     <h1>Project:</h1>
+    <p>{{ this.$route.params.slug }}</p>
 </template>
 
 
