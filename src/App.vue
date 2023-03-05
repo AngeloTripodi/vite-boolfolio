@@ -13,8 +13,9 @@ import AppHeader from './components/AppHeader.vue';
   <header>
     <AppHeader />
   </header>
-
-  <router-view></router-view>
+  <main class="container">
+    <router-view></router-view>
+  </main>
 </template>
 
 <style lang="scss">

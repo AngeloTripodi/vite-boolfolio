@@ -27,15 +27,15 @@ export default {
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item px-1">
+                    <li class="nav-item">
                         <router-link :to="{ name: 'home' }" class="nav-link"
                             :class="this.$route.name === 'home' ? 'active' : ''">Home</router-link>
                     </li>
-                    <li class="nav-item px-1">
+                    <li class="nav-item">
                         <router-link :to="{ name: 'about-us' }" :class="this.$route.name === 'about-us' ? 'active' : ''"
                             class="nav-link">About Us</router-link>
                     </li>
-                    <li class="nav-item px-1">
+                    <li class="nav-item">
                         <router-link :to="{ name: 'projects' }" :class="this.$route.name === 'projects' ? 'active' : ''"
                             class="nav-link">Projects</router-link>
                     </li>
