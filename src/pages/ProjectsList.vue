@@ -47,7 +47,9 @@ export default {
         </div>
 
         <div class="row card-container">
-            <AppSingleProject v-for="project in projects" :project="project" />
+
+            <AppSingleProject v-for="project in projects" :project="project" class="col-3" />
+
         </div>
     </div>
 </template>
