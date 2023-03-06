@@ -1,4 +1,6 @@
 <script>
+import { stringifyExpression } from '@vue/compiler-core';
+
 export default {
     name: 'AppSingleProject',
     data() {
@@ -15,14 +17,21 @@ export default {
             type: Boolean,
             required: false,
             default: false,
+        },
+        'imgPath': {
+            type: String,
+            required: true,
         }
+
     },
 }
 </script>
 
 <template>
     <div class="card p-2 mb-3">
-        <img :src="project.image" alt="{{project.title}}">
+        <img v-if="!project.image.startsWith('uploads/')" :src="project.image" alt="{{project.title}}">
+        <img v-else :src="imgPath + '/storage/' + project.image" alt="{{project.title}}">
+
         <div class="card-body">
             <h4>{{ project.title }}</h4>
             <h5>{{ project.author }}</h5>

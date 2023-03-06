@@ -48,7 +48,8 @@ export default {
 
         <div class="row card-container">
 
-            <AppSingleProject v-for="project in projects" :project="project" class="col-3" />
+            <AppSingleProject v-for="project in projects" :project="project" :imgPath="'http://127.0.0.1:8000'"
+                class="col-3" />
 
         </div>
     </div>

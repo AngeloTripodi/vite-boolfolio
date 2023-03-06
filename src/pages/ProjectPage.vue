@@ -35,7 +35,7 @@ export default {
 
 <template>
     <div class="row justify-content-center mt-4">
-        <AppSingleProject :project="project" isShow="true" class="col-6" />
+        <AppSingleProject :project="project" isShow="true" :imgPath="'http://127.0.0.1:8000'" class="col-6" />
     </div>
 </template>
 
